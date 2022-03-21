@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" id="theme-switcher" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div class="calculatrice">
+      <div class="header-container">
+        <h1>calc</h1>
+        <div class="theme-container">
+          <span class="title-theme">THEME</span>
+          <div class="slider-contianer">
+            <div class="theme-num">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+
+            <div class="switch">
+              <div class="theme" onclick="changeTheme('one')"></div>
+              <div class="theme" onclick="changeTheme('two')"></div>
+              <div class="theme" onclick="changeTheme('three')"></div>
+              <div class="selector"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="affichage"></div>
+      <div class="touches">
+        <div class="btn-rows">
+          <button class="bouton" data-key="103">7</button>
+          <button class="bouton" data-key="104">8</button>
+          <button class="bouton" data-key="105">9</button>
+          <button class="bouton sp-btn btn-del" data-key="8">DEL</button>
+        </div>
+        <div class="btn-rows">
+          <button class="bouton" data-key="100">4</button>
+          <button class="bouton" data-key="101">5</button>
+          <button class="bouton" data-key="102">6</button>
+          <button class="bouton" data-key="107">+</button>
+        </div>
+        <div class="btn-rows">
+          <button class="bouton" data-key="97">1</button>
+          <button class="bouton" data-key="98">2</button>
+          <button class="bouton" data-key="99">3</button>
+          <button class="bouton" data-key="109">-</button>
+        </div>
+        <div class="btn-rows">
+          <button class="bouton" data-key="">.</button>
+          <button class="bouton" data-key="96">0</button>
+          <button class="bouton" data-key="111">/</button>
+          <button class="bouton" data-key="106">x</button>
+        </div>
+        <div class="btn-rows">
+          <button class="btn-lastRow sp-btn btn-del" data-key="46">RESET</button>
+          <button class="btn-lastRow sp-btn btn-eq" data-key="13">=</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Walidsem</a>.
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
